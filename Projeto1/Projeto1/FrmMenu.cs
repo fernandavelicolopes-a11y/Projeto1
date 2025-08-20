@@ -21,5 +21,12 @@ namespace Projeto1
         {
 
         }
+
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            frmCadastroUsuario cadastro = new frmCadastroUsuario();
+            cadastro.Show();
+
+        }
     }
 }

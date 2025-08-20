@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblCadastro = new System.Windows.Forms.Label();
             this.lblPequisar = new System.Windows.Forms.Label();
             this.lblNome = new System.Windows.Forms.Label();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
@@ -36,20 +35,9 @@
             this.dvgCadastro = new System.Windows.Forms.DataGridView();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblTituloCad = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dvgCadastro)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblCadastro
-            // 
-            this.lblCadastro.AutoSize = true;
-            this.lblCadastro.Font = new System.Drawing.Font("Impact", 20.25F);
-            this.lblCadastro.Location = new System.Drawing.Point(292, 56);
-            this.lblCadastro.Name = "lblCadastro";
-            this.lblCadastro.Size = new System.Drawing.Size(117, 34);
-            this.lblCadastro.TabIndex = 0;
-            this.lblCadastro.Text = "Cadastro";
-            this.lblCadastro.Click += new System.EventHandler(this.lblCadastro_Click);
             // 
             // lblPequisar
             // 
@@ -88,10 +76,11 @@
             // dvgCadastro
             // 
             this.dvgCadastro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgCadastro.Location = new System.Drawing.Point(365, 115);
+            this.dvgCadastro.Location = new System.Drawing.Point(308, 115);
             this.dvgCadastro.Name = "dvgCadastro";
-            this.dvgCadastro.Size = new System.Drawing.Size(264, 190);
+            this.dvgCadastro.Size = new System.Drawing.Size(407, 190);
             this.dvgCadastro.TabIndex = 5;
+            this.dvgCadastro.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dvgCadastro_MouseDoubleClick);
             // 
             // btnSalvar
             // 
@@ -112,22 +101,22 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // lblTituloCad
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Impact", 19.25F);
-            this.label1.Location = new System.Drawing.Point(186, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(187, 33);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "INFORMAÇÕES DE";
+            this.lblTituloCad.AutoSize = true;
+            this.lblTituloCad.Font = new System.Drawing.Font("Impact", 19.25F);
+            this.lblTituloCad.Location = new System.Drawing.Point(193, 35);
+            this.lblTituloCad.Name = "lblTituloCad";
+            this.lblTituloCad.Size = new System.Drawing.Size(297, 33);
+            this.lblTituloCad.TabIndex = 8;
+            this.lblTituloCad.Text = "INFORMAÇÕES DE CADASTRO";
             // 
             // FrmCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(746, 417);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTituloCad);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.dvgCadastro);
@@ -135,7 +124,6 @@
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.lblNome);
             this.Controls.Add(this.lblPequisar);
-            this.Controls.Add(this.lblCadastro);
             this.Name = "FrmCadastro";
             this.Text = "FrmCadastro";
             this.Load += new System.EventHandler(this.FrmCadastro_Load);
@@ -146,8 +134,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblCadastro;
         private System.Windows.Forms.Label lblPequisar;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.TextBox txtPesquisar;
@@ -155,6 +141,6 @@
         private System.Windows.Forms.DataGridView dvgCadastro;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTituloCad;
     }
 }

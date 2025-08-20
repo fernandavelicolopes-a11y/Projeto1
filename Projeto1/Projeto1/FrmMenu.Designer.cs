@@ -52,6 +52,7 @@
             this.btnCadastro.TabIndex = 1;
             this.btnCadastro.Text = "Cadastro";
             this.btnCadastro.UseVisualStyleBackColor = true;
+            this.btnCadastro.Click += new System.EventHandler(this.btnCadastro_Click);
             // 
             // btnSair
             // 
