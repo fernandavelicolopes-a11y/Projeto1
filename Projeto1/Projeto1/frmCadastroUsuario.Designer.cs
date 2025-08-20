@@ -34,6 +34,7 @@
             this.txtCadSenha = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblCadUsuario
@@ -73,7 +74,7 @@
             // 
             // btnCadastrar
             // 
-            this.btnCadastrar.Location = new System.Drawing.Point(300, 273);
+            this.btnCadastrar.Location = new System.Drawing.Point(204, 267);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(132, 31);
             this.btnCadastrar.TabIndex = 4;
@@ -91,11 +92,21 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "CADASTRO";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(412, 267);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(132, 31);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Cadastrar";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frmCadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtCadSenha);
@@ -118,5 +129,6 @@
         private System.Windows.Forms.TextBox txtCadSenha;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }
